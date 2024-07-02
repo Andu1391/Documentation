@@ -28,14 +28,15 @@ kubectl get all -A
 
 #7 Go to your Kubernetes cluster environment and using kubectl write a command which counts all pods in the entire cluster and outputs a single line numerical value.
  
-/*
+
 Semi-sorted out.
+
 kubectl get pods -A | wc -l
-*/
+
  
 #8 Go to your Kubernetes cluster environment and write a kubectl command that shows only a specific pod's container image.
  
-/*
+
 Sorted out
+
 kubectl get pods -o=jsonpath='{.items[0].spec.containers[*].image}'
-*/
